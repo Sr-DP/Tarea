@@ -42,6 +42,22 @@ class Libro3 {
             return `Libro de texto titulado "${this.titulo}" escrito por ${this.autor}`;
         }
     }
+    mostrarEscritor() {
+        if (this.tipo === 'texto') {
+            return `Escrito por ${this.autor}`;
+        }
+    }
+    mostrarContenido() {
+        if (this.tipo === 'texto') {
+            return `contenido de libro es ${this.contenido}`;
+        }
+    }
+    mostrarTipo() {
+        if (this.tipo === 'texto') {
+            return `el tipo del libro es ${this.tipo}`;
+        }
+    }
+    
 }
 
 
